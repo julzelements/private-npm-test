@@ -1,9 +1,9 @@
-name: Cypress Tests
+name: Install from private npm
 
 on: push
 
 jobs:
-  cypress-run:
+  install-private-npm:
     runs-on: ubuntu-22.04
     steps:
         - uses: actions/checkout@v3
