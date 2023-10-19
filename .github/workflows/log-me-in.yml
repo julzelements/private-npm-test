@@ -13,8 +13,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v6
         with:
-        #   env:
-        #    NPM_TOKEN=${{ secrets.JULZ_NPM_TOKEN }}
-        #    NODE_AUTH_TOKEN=${{ secrets.JULZ_NPM_TOKEN }}
+          env:
+           NPM_TOKEN=${{ secrets.JULZ_NPM_TOKEN }}
           build: npm run build
           start: npm start
